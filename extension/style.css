@@ -24,6 +24,29 @@
 .prompt-item:hover {
   background-color: #eee;
 }
+#add-prompt {
+  margin-top: 4px;
+  padding: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+#prompt-dialog {
+  padding: 10px;
+}
+#prompt-dialog form label {
+  display: block;
+  margin-top: 8px;
+}
+#prompt-dialog input,
+#prompt-dialog textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 4px;
+}
+#prompt-dialog .dialog-buttons {
+  margin-top: 10px;
+  text-align: right;
+}
 @media (prefers-color-scheme: dark) {
   #prompt-search {
     background: #555;
@@ -31,6 +54,11 @@
     border: 1px solid #444;
   }
   #prompt-results {
+    background: #333;
+    color: #eee;
+    border-color: #555;
+  }
+  #prompt-dialog {
     background: #333;
     color: #eee;
     border-color: #555;
