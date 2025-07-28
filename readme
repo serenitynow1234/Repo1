@@ -1,1 +1,13 @@
+# ChatGPT Prompt Saver Chrome Extension
 
+This extension allows you to save prompts with a title and description and quickly insert them on the ChatGPT website. A search box appears under ChatGPT's input field for finding your saved prompts by title.
+
+## Installation
+1. Open Chrome and navigate to `chrome://extensions`.
+2. Enable **Developer mode** in the top-right corner.
+3. Click **Load unpacked** and select the `extension` folder in this repository.
+
+## Usage
+1. Click the extension icon and fill in the title, description, and prompt text, then click **Save**.
+2. Visit [chat.openai.com](https://chat.openai.com) and you'll see a search field under the message input area.
+3. Start typing a title to find your saved prompts. Selecting one will insert the prompt text into the input box.
