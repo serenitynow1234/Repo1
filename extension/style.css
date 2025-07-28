@@ -1,5 +1,6 @@
 #prompt-search-container {
   margin-top: 4px;
+  position: relative;
 }
 #prompt-search {
   width: 100%;
@@ -7,12 +8,14 @@
   box-sizing: border-box;
 }
 #prompt-results {
-  background: white;
+  background: #fff;
+  color: #000;
   border: 1px solid #ccc;
   max-height: 200px;
   overflow-y: auto;
   z-index: 1000;
   position: absolute;
+  width: 100%;
 }
 .prompt-item {
   padding: 4px;
@@ -20,4 +23,19 @@
 }
 .prompt-item:hover {
   background-color: #eee;
+}
+@media (prefers-color-scheme: dark) {
+  #prompt-search {
+    background: #555;
+    color: #fff;
+    border: 1px solid #444;
+  }
+  #prompt-results {
+    background: #333;
+    color: #eee;
+    border-color: #555;
+  }
+  .prompt-item:hover {
+    background-color: #444;
+  }
 }
