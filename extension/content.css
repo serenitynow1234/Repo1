@@ -1,0 +1,6 @@
+#prompt-search {
+  padding: 5px;
+}
+#prompt-results div:hover {
+  background:#eee;
+}

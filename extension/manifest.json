@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Prompt Saver",
+  "description": "Save and search prompts on ChatGPT",
+  "version": "1.0",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Prompt Saver"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://chat.openai.com/*"],
+      "js": ["contentScript.js"],
+      "css": ["content.css"],
+      "run_at": "document_end"
+    }
+  ]
+}

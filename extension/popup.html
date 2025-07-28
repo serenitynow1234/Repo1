@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Prompt Saver</title>
+<style>
+  body { font-family: Arial, sans-serif; width: 300px; padding: 10px; }
+  input, textarea { width: 100%; margin-bottom: 5px; }
+  button { width: 100%; }
+  .prompt-list { max-height: 200px; overflow-y: auto; margin-top: 10px; }
+  .prompt-item { border-bottom: 1px solid #ddd; padding: 5px 0; }
+  .prompt-title { font-weight: bold; }
+  .prompt-desc { font-size: 0.9em; color: #555; }
+</style>
+</head>
+<body>
+  <h2>Save Prompt</h2>
+  <input type="text" id="title" placeholder="Title" />
+  <textarea id="description" placeholder="Description"></textarea>
+  <textarea id="prompt" placeholder="Prompt text"></textarea>
+  <button id="save">Save</button>
+  <div class="prompt-list" id="list"></div>
+<script src="popup.js"></script>
+</body>
+</html>
