@@ -1,23 +1,32 @@
 #prompt-search-container {
   margin-top: 4px;
+  position: relative;
 }
+
 #prompt-search {
   width: 100%;
   padding: 6px;
   box-sizing: border-box;
+  background: #333;
+  color: #fff;
+  border: 1px solid #555;
 }
+
 #prompt-results {
-  background: white;
-  border: 1px solid #ccc;
+  background: #1e1e1e;
+  border: 1px solid #555;
   max-height: 200px;
   overflow-y: auto;
   z-index: 1000;
   position: absolute;
+  width: 100%;
 }
+
 .prompt-item {
   padding: 4px;
   cursor: pointer;
 }
+
 .prompt-item:hover {
-  background-color: #eee;
+  background-color: #444;
 }

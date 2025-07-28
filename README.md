@@ -1,5 +1,3 @@
 # Repository
 
-This repository contains a simple Chrome extension located in the `extension`
-folder. The extension adds a prompt search bar to the ChatGPT website and lets
-users store prompts with titles and descriptions.
+This repository contains a Chrome extension in the `extension` folder. The extension injects a search bar into ChatGPT and provides a popup to manage reusable prompts.
