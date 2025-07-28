@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Prompt Manager</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>Prompts</h1>
+  <form id="prompt-form">
+    <label>
+      Title
+      <input type="text" id="title" required />
+    </label>
+    <label>
+      Description
+      <input type="text" id="description" />
+    </label>
+    <label>
+      Prompt
+      <textarea id="text" rows="4" required></textarea>
+    </label>
+    <button type="submit">Save</button>
+  </form>
+  <div id="prompt-list"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
