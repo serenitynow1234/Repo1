@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Prompt Saver Options</title>
+  <style>
+    body { font-family: sans-serif; padding: 10px; }
+    label { display: block; margin-top: 8px; }
+    input, textarea { width: 100%; }
+    #prompt-list { margin-top: 20px; }
+    .prompt-entry { border-bottom: 1px solid #ccc; padding: 4px 0; }
+    button.delete { margin-left: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Saved Prompts</h1>
+  <form id="prompt-form">
+    <label>Title:<br><input type="text" id="title"></label>
+    <label>Description:<br><input type="text" id="description"></label>
+    <label>Prompt:<br><textarea id="text" rows="4"></textarea></label>
+    <button type="submit">Save Prompt</button>
+  </form>
+  <div id="prompt-list"></div>
+  <script src="options.js"></script>
+</body>
+</html>
