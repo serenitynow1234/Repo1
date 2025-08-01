@@ -1,0 +1,23 @@
+/* styles.css - popup and icon styles */
+
+body {
+  font-family: Arial, sans-serif;
+  min-width: 250px;
+  padding: 10px;
+}
+
+#bookmarkList {
+  list-style-type: none;
+  padding: 0;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.cgpt-bookmark-icon {
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+#summary {
+  margin-top: 10px;
+}
