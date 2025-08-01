@@ -1,0 +1,39 @@
+/* Common styles for the content script and popup */
+
+/* Bookmark button next to each message */
+.chatgpt-bookmark-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 4px;
+  opacity: 0.6;
+}
+
+.chatgpt-bookmark-btn:hover {
+  opacity: 1;
+}
+
+/* Popup layout */
+body {
+  font-family: sans-serif;
+  min-width: 250px;
+  padding: 10px;
+}
+
+#bookmarks {
+  max-height: 150px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.bookmark-item {
+  padding: 4px 0;
+  border-bottom: 1px solid #eee;
+}
+
+button {
+  margin-top: 5px;
+}
