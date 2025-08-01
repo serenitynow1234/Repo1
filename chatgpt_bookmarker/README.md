@@ -2,6 +2,8 @@
 
 This extension lets you bookmark entire ChatGPT conversations. It automatically
 adds a **Bookmark Chat** button next to the message box on the ChatGPT page.
+Saved conversations include labels for the user and assistant so you can easily
+review them later.
 
 ## Installation
 1. Open Chrome and navigate to `chrome://extensions`.

@@ -12,7 +12,9 @@ function ensureButton() {
 
 function collectConversation() {
   const msgs = Array.from(document.querySelectorAll('[data-message-author-role]'));
-  return msgs.map(m => m.innerText).join('\n\n');
+  return msgs
+    .map(m => `${m.dataset.messageAuthorRole}: ${m.innerText}`)
+    .join('\n\n');
 }
 
 function addBookmarkButton(container) {

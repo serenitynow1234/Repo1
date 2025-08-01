@@ -3,7 +3,7 @@
 This repository provides two Chrome extensions located in the `extension` and `chatgpt_bookmarker` folders.
 
 - `extension`: Adds a prompt search bar to ChatGPT so you can store prompts with titles and descriptions.
-- `chatgpt_bookmarker`: Lets you bookmark ChatGPT conversations for later reference.
+- `chatgpt_bookmarker`: Lets you bookmark ChatGPT conversations for later reference. Saved conversations record whether each message came from the user or the assistant.
 
 ## Installation
 
