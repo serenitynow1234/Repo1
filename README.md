@@ -1,6 +1,5 @@
 # Repository
 
-This repository provides two Chrome extensions.
 
 - `extension`: Adds a prompt search bar to ChatGPT so you can store prompts with titles and descriptions.
 - `chatgpt_bookmarker`: Lets you bookmark ChatGPT conversations for later reference.
@@ -13,4 +12,4 @@ This repository provides two Chrome extensions.
    - Select the `extension` folder for the prompt saver.
    - Select the `chatgpt_bookmarker` folder for the bookmarker extension.
 
-After loading either extension, open ChatGPT to use its new features.
+
