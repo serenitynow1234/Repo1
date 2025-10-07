@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  "name": "Reasoning Visualizer",
+  "version": "1.0.0",
+  "description": "Visualize ChatGPT reasoning as Mermaid flowcharts in a right-hand sidebar.",
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": [
+    "https://chat.openai.com/*",
+    "https://chatgpt.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "toggle-sidebar": {
+      "suggested_key": {
+        "default": "Alt+R"
+      },
+      "description": "Toggle Reasoning Visualizer sidebar"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://chatgpt.com/*"
+      ],
+      "js": ["lib/domReady.js", "parser.js", "content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "ui/sidebar.html",
+        "ui/sidebar.css",
+        "ui/sidebar.js",
+        "lib/mermaid.min.js",
+        "assets/*"
+      ],
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://chatgpt.com/*"
+      ]
+    }
+  ]
+}

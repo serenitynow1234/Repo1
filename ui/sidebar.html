@@ -1,0 +1,50 @@
+<div class="rv-wrapper">
+  <div class="rv-toggle-tab" title="Toggle Reasoning Visualizer" role="button" tabindex="0">⟲</div>
+  <div class="rv-panel" aria-label="Reasoning Visualizer sidebar">
+    <header class="rv-header">
+      <div class="rv-title">Reasoning Visualizer</div>
+      <div class="rv-actions">
+        <button class="rv-collapse" type="button" title="Collapse sidebar">⟘</button>
+      </div>
+    </header>
+    <section class="rv-section rv-messages">
+      <label class="rv-field">
+        <span class="rv-label">Assistant reply</span>
+        <select class="rv-message-select"></select>
+      </label>
+    </section>
+    <section class="rv-section rv-controls">
+      <div class="rv-filter-chips" role="group" aria-label="Node filters">
+        <button type="button" class="rv-chip active" data-filter="premise">Premises</button>
+        <button type="button" class="rv-chip active" data-filter="logic">Logic</button>
+        <button type="button" class="rv-chip active" data-filter="conclusion">Conclusions</button>
+      </div>
+      <div class="rv-depth">
+        <label>
+          <span>Depth</span>
+          <input type="range" min="1" max="5" value="5" class="rv-depth-slider" />
+          <span class="rv-depth-value">5</span>
+        </label>
+      </div>
+      <label class="rv-simplify">
+        <input type="checkbox" class="rv-simplify-toggle" />
+        <span>Simplify logic</span>
+      </label>
+      <button type="button" class="rv-contradictions">Find contradictions</button>
+    </section>
+    <section class="rv-section rv-exports">
+      <button type="button" data-kind="copy-mermaid">Copy Mermaid</button>
+      <button type="button" data-kind="download-svg">Download SVG</button>
+      <button type="button" data-kind="download-png">Download PNG</button>
+      <button type="button" data-kind="download-json">Export JSON</button>
+    </section>
+    <div class="rv-status"></div>
+    <div class="rv-graph-container">
+      <div class="rv-mermaid"></div>
+      <div class="rv-error" hidden></div>
+    </div>
+    <div class="rv-contradiction-list" hidden></div>
+    <div class="rv-toast" hidden></div>
+    <div class="rv-resizer" title="Resize sidebar" role="separator" aria-orientation="vertical"></div>
+  </div>
+</div>
