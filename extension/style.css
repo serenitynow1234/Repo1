@@ -1,0 +1,23 @@
+#prompt-search-container {
+  margin-top: 4px;
+}
+#prompt-search {
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+}
+#prompt-results {
+  background: white;
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  position: absolute;
+}
+.prompt-item {
+  padding: 4px;
+  cursor: pointer;
+}
+.prompt-item:hover {
+  background-color: #eee;
+}
